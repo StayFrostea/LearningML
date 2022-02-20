@@ -6,7 +6,7 @@ import pandas as pd
 from tqdm import tqdm
 import csv
 
-# Imports
+# Filepaths
 train_name = '/Users/jeffroszell/Documents/School/Thesis/GH_ML_Learning/LearningML/Thesis/' \
              'AD_GAN/csv/train_path.csv'
 test_name = '/Users/jeffroszell/Documents/School/Thesis/GH_ML_Learning/LearningML/Thesis/' \

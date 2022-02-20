@@ -20,6 +20,7 @@ from tensorflow import keras
 
 os.environ["KERAS_BACKEND"] = "plaidml.keras.backend"
 
+
 # define the standalone discriminator model
 def define_discriminator(in_shape=(28, 28, 1)):
     model = Sequential()
