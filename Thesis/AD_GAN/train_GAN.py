@@ -179,8 +179,8 @@ def load_real_samples(x, y):
     X = expand_dims(trainX, axis=-1)
     # convert from ints to floats
     X = trainX.astype('float32')
-    # scale from [0,255] to [-1,1]
-    X = (X - 127.5) / 127.5
+    # # scale from [0,255] to [-1,1]
+    # X = (X - 127.5) / 127.5
     return [X, trainy]
 
 
@@ -198,7 +198,7 @@ def generate_real_samples(dataset, n_samples):
 
 
 # generate points in latent space as input for the generator
-def generate_latent_points(latent_dim, n_samples, n_classes=10):
+def generate_latent_points(latent_dim, n_samples, n_classes=2):
     # generate points in the latent space
     x_input = randn(latent_dim * n_samples)
     # reshape into a batch of inputs for the network
